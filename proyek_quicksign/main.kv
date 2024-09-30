@@ -1,0 +1,24 @@
+<MainLayout>:
+    BoxLayout:
+        size_hint_y: None
+        height: 50
+        Button:
+            text: 'Home'
+            on_press: root.show_home(self)
+        Button:
+            text: 'About'
+            on_press: root.show_about(self)
+        Button:
+            text: 'Contact'
+            on_press: root.show_contact(self)
+    
+    Label:
+        id: content
+        text: 'Welcome to My Kivy App'
+        halign: 'center'
+        valign: 'middle'
+
+    Label:
+        text: '© 2024 My Kivy App. All rights reserved.'
+        size_hint_y: None
+        height: 50
